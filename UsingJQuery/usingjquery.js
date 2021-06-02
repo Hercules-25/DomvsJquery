@@ -63,8 +63,9 @@ let friends = [
   ];
 $("#lastBtn").click(function () {
     let randoFriends = friends[Math.floor(Math.random() * friends.length)]
-    $("<li></li>").appendTo("#ulList")
-     .innerText("#" + randoFriends)
+    $("<li id='friendsList'>" +randoFriends + "</li>").appendTo("#ulList")
+    // $(randoFriends).appendTo("#friendsList")
+
     
    
 
